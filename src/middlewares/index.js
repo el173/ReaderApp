@@ -1,17 +1,16 @@
-import {applyMiddleware} from '@reduxjs/toolkit';
+import {applyMiddleware} from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import {createLogger} from 'redux-logger';
 
 export const sagaMiddleware = createSagaMiddleware();
 
-const Logger = createLogger({
-  collapsed: true,
-  diff: true,
-});
-
 let middlewares = [sagaMiddleware];
 
 if (__DEV__) {
+  const Logger = createLogger({
+    collapsed: true,
+    diff: true,
+  });
   middlewares = [...middlewares, Logger];
 }
 

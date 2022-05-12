@@ -1,0 +1,3 @@
+import {GET_TOP_STORIES, GET_TOP_STORIES_OK} from './MainView';
+
+export {GET_TOP_STORIES, GET_TOP_STORIES_OK};

@@ -1,4 +1,4 @@
-import {GET_TOP_STORIES_OK} from '../actionTypes/MainView';
+import {GET_TOP_STORIES_OK} from '../actionTypes';
 
 const INITIAL_STATE = {};
 

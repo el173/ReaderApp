@@ -6,9 +6,12 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, {useEffect} from 'react';
+import {connect} from 'react-redux';
 import {StyleSheet, View, useWindowDimensions} from 'react-native';
 import {TabView, SceneMap} from 'react-native-tab-view';
+
+import {GET_TOP_STORIES} from '../actionTypes';
 
 const FirstRoute = () => <View style={{flex: 1, backgroundColor: '#ff4081'}} />;
 
@@ -21,7 +24,11 @@ const renderScene = SceneMap({
   second: SecondRoute,
 });
 
-const Main = () => {
+const Main = ({getTopStories}) => {
+  useEffect(() => {
+    getTopStories();
+  }, []);
+
   const layout = useWindowDimensions();
 
   const [index, setIndex] = React.useState(0);
@@ -59,4 +66,20 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Main;
+const mapStateToProps = state => {
+  return {
+    topStories: state.mainViewReducer,
+  };
+};
+
+function mapDispatchToProps(dispatch) {
+  return {
+    getTopStories: () => {
+      dispatch({
+        type: GET_TOP_STORIES,
+      });
+    },
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Main);

@@ -1,5 +1,5 @@
-import {combineReducers} from '@reduxjs/toolkit';
+import {combineReducers} from 'redux';
 
 import MainViewReducer from './MainView';
 
-export default combineReducers({MainViewReducer});
+export default combineReducers({mainViewReducer: MainViewReducer});

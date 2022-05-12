@@ -1,9 +1,13 @@
 import {takeLatest, put} from 'redux-saga/effects';
 
-import {GET_TOP_STORIES, GET_TOP_STORIES_OK} from '../actionTypes/MainView';
+import {HACKER_NEWS_TOP_STORIES} from '../api';
+import {makeApiCall, getAPI} from '../lib/Utils';
+
+import {GET_TOP_STORIES, GET_TOP_STORIES_OK} from '../actionTypes';
 
 const getTopStories = function* ({payload}) {
-  yield put({type: GET_TOP_STORIES_OK, payload});
+  const storiesResponse = yield makeApiCall(getAPI(HACKER_NEWS_TOP_STORIES));
+  yield put({type: GET_TOP_STORIES_OK, storiesResponse});
 };
 
 export function* getTopStoriesSaga() {

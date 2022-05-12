@@ -1,5 +1,5 @@
 /**
- * Sample React Native App
+ * ReaderApp React Native App
  * https://github.com/facebook/react-native
  *
  * @format
@@ -15,7 +15,7 @@ import {PersistGate} from 'redux-persist/integration/react';
 
 import {MainStack} from './src/routes/NavigationStack';
 
-import configureStore from './Store';
+import configureStore from './src/Store';
 const {store, persistor} = configureStore();
 
 enableScreens();
