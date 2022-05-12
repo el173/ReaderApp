@@ -1,15 +1,36 @@
 import React, {useEffect} from 'react';
 import {connect} from 'react-redux';
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet, View, FlatList} from 'react-native';
 
 import {GET_TOP_STORIES} from '../../actionTypes';
 
-const TopStoriesTab = ({getTopStories}) => {
+import {ClickableRow} from '../../components';
+
+const TopStoriesTab = ({getTopStories, navigation, topStories}) => {
   useEffect(() => {
     getTopStories();
   }, []);
 
-  return <View style={styles.container} />;
+  const keyExtractor = (item, index) => index;
+
+  return (
+    <View style={styles.container}>
+      <FlatList
+        data={topStories}
+        // extraData={this.state}
+        // onRefresh={() => this.onRefresh()}
+        // refreshing={this.state.isFetching}
+        keyExtractor={keyExtractor}
+        renderItem={({item, index}) => (
+          <ClickableRow
+            key={`${index}-${item.time}`}
+            newsItem={item}
+            navigation={navigation}
+          />
+        )}
+      />
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
@@ -20,7 +41,7 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = state => {
   return {
-    topStories: state.mainViewReducer,
+    topStories: state.mainViewReducer.topStories,
   };
 };
 

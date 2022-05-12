@@ -12,12 +12,13 @@ import {TabView, SceneMap} from 'react-native-tab-view';
 
 import TopStoriesTab from './TopStoriesTab';
 
-const renderScene = SceneMap({
-  first: TopStoriesTab,
-  // second: TopStoriesTab,
-});
+const renderScene = navigation =>
+  SceneMap({
+    first: () => <TopStoriesTab navigation={navigation} />,
+    // second: FirstRoute,
+  });
 
-const Main = () => {
+const Main = ({navigation}) => {
   const layout = useWindowDimensions();
 
   const [index, setIndex] = React.useState(0);
@@ -29,7 +30,7 @@ const Main = () => {
   return (
     <TabView
       navigationState={{index, routes}}
-      renderScene={renderScene}
+      renderScene={renderScene(navigation)}
       onIndexChange={setIndex}
       initialLayout={{width: layout.width}}
     />

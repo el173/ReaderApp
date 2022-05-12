@@ -2,9 +2,11 @@ import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import MainView from '../screens/MainView';
+import DetailView from '../screens/DetailView';
 
 const mainScreens = {
   home: {screen: MainView, title: 'Home'},
+  detailView: {screen: DetailView, title: 'detailView'},
 };
 
 const Stack = createNativeStackNavigator();
