@@ -1,3 +1,3 @@
-import ClickableRow from './ClickableRow';
+import StoryCard from './StoryCard';
 
-export {ClickableRow};
+export {StoryCard};

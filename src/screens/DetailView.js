@@ -1,10 +1,11 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import {StyleSheet, View, Text} from 'react-native';
 
-const DetailView = ({navigation}) => {
+const DetailView = ({navigation, kids}) => {
   return (
     <View style={styles.container}>
-      <Text>hello</Text>
+      <Text>{kids[1]}</Text>
     </View>
   );
 };
@@ -17,4 +18,10 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DetailView;
+const mapStateToProps = (state, props) => {
+  return {
+    ...props.route.params,
+  };
+};
+
+export default connect(mapStateToProps)(DetailView);

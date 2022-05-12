@@ -15,7 +15,7 @@ import TopStoriesTab from './TopStoriesTab';
 const renderScene = navigation =>
   SceneMap({
     first: () => <TopStoriesTab navigation={navigation} />,
-    // second: FirstRoute,
+    // second: () => <TopStoriesTab navigation={navigation} />,
   });
 
 const Main = ({navigation}) => {

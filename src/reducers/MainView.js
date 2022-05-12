@@ -1,6 +1,8 @@
 import {GET_TOP_STORIES_OK} from '../actionTypes';
 
-const INITIAL_STATE = {};
+const INITIAL_STATE = {
+  topStories: [],
+};
 
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
