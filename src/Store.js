@@ -11,7 +11,7 @@ const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
   timeout: null,
-  whitelist: [],
+  whitelist: ['mainViewReducer'],
 };
 
 export default function configureStore() {

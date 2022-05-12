@@ -2,6 +2,13 @@ import axios from 'axios';
 
 import {API_LIST} from '../api';
 
+/**
+ *
+ * @param {*} url
+ * @param {*} method
+ * @param {*} params
+ * @returns api call response
+ */
 export const makeApiCall = async (url, method = 'GET', params) => {
   const configurationObject = {
     method: method,
