@@ -1,0 +1,2 @@
+export const GET_TOP_STORIES = 'GET_TOP_STORIES';
+export const GET_TOP_STORIES_OK = 'GET_TOP_STORIES_OK';
