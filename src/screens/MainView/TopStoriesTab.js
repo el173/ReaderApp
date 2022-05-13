@@ -7,9 +7,7 @@ import {GET_TOP_STORIES} from '../../actionTypes';
 import {StoryCard} from '../../components';
 
 const TopStoriesTab = ({getTopStories, navigation, topStories}) => {
-  const [isRefreshing, setRefreshing] = useState(
-    topStories && topStories.length < 0,
-  );
+  const [isRefreshing, setRefreshing] = useState(false);
 
   useEffect(() => {
     getTopStories();

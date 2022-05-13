@@ -6,7 +6,7 @@ import DetailView from '../screens/DetailView';
 
 const mainScreens = {
   home: {screen: MainView, title: 'Home'},
-  detailView: {screen: DetailView, title: 'detailView'},
+  detailView: {screen: DetailView, title: 'Detail View'},
 };
 
 const Stack = createNativeStackNavigator();
@@ -17,7 +17,7 @@ export function MainStack() {
     if (mainScreens.hasOwnProperty(key)) {
       screens.push(
         <Stack.Screen
-          key={key}
+          key={mainScreens[key].title}
           name={key}
           component={mainScreens[key].screen}
         />,
@@ -29,7 +29,7 @@ export function MainStack() {
       initialRouteName={'home'}
       screenOptions={{
         gestureEnabled: false,
-        headerShown: false,
+        headerShown: true,
       }}>
       {screens}
     </Stack.Navigator>

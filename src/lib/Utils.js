@@ -10,19 +10,27 @@ import {API_LIST} from '../api';
  * @returns api call response
  */
 export const makeApiCall = async (url, method = 'GET', params) => {
-  const configurationObject = {
-    method: method,
-    url: url,
-  };
-  if (method === 'POST') {
-    // TODO:: bind params to post data
+  try {
+    const configurationObject = {
+      method: method,
+      url: url,
+    };
+    if (method === 'POST') {
+      // TODO:: bind params to post data
+    }
+    const response = await axios(configurationObject);
+    // console.log(response.data);
+    return {
+      success: true,
+      data: response.data,
+    };
+  } catch (error) {
+    console.log('AXIOS ERROR : error while making network request - ', error);
+    return {
+      success: false,
+      info: error.code,
+    };
   }
-  const response = await axios(configurationObject);
-  console.log(response.data);
-  return {
-    success: true,
-    data: response.data,
-  };
 };
 
 /**

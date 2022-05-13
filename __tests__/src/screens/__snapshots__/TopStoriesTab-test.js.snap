@@ -1,0 +1,222 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main View renders no with data 1`] = `
+<View
+  style={
+    Object {
+      "alignContent": "center",
+      "alignItems": "center",
+      "alignSelf": "center",
+      "position": "absolute",
+    }
+  }
+>
+  <ActivityIndicator
+    color="#178DE7"
+    size="large"
+  />
+</View>
+`;
+
+exports[`Main View renders with data 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "by": "dhouston",
+          "descendants": 71,
+          "id": 8863,
+          "kids": Array [
+            9224,
+            8917,
+            8952,
+            8958,
+            8884,
+            8887,
+            8869,
+            8873,
+            8940,
+            8908,
+            9005,
+            9671,
+            9067,
+            9055,
+            8865,
+            8881,
+            8872,
+            8955,
+            10403,
+            8903,
+            8928,
+            9125,
+            8998,
+            8901,
+            8902,
+            8907,
+            8894,
+            8870,
+            8878,
+            8980,
+            8934,
+            8943,
+            8876,
+          ],
+          "score": 104,
+          "time": 1175714200,
+          "title": "My YC app: Dropbox - Throw away your USB drive",
+          "type": "story",
+          "url": "http://www.getdropbox.com/u/2/screencast.html",
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onRefresh={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    refreshControl={
+      <RefreshControlMock
+        onRefresh={[Function]}
+        refreshing={false}
+      />
+    }
+    refreshing={false}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    viewabilityConfigCallbackPairs={Array []}
+  >
+    <RCTRefreshControl />
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "borderRadius": 10,
+              "elevation": 3,
+              "flex": 1,
+              "marginBottom": 10,
+              "marginHorizontal": 5,
+              "padding": 15,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 1,
+                "width": 1,
+              },
+              "shadowOpacity": 1,
+              "shadowRadius": 5,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "marginBottom": 10,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 18,
+                }
+              }
+            >
+              My YC app: Dropbox - Throw away your USB drive
+            </Text>
+          </View>
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 15,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#178DE7",
+                  "fontSize": 14,
+                }
+              }
+            >
+              View 33 Comment(s)
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 0.75,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 12,
+                  }
+                }
+              >
+                Wed, 04 Apr 2007 19:16:40 GMT
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 0.25,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 12,
+                  }
+                }
+              >
+                By: dhouston
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
