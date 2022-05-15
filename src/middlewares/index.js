@@ -6,12 +6,12 @@ export const sagaMiddleware = createSagaMiddleware();
 
 let middlewares = [sagaMiddleware];
 
-// if (__DEV__) {
-//   const Logger = createLogger({
-//     collapsed: true,
-//     diff: true,
-//   });
-//   middlewares = [...middlewares, Logger];
-// }
+if (__DEV__) {
+  const Logger = createLogger({
+    collapsed: true,
+    diff: true,
+  });
+  middlewares = [...middlewares, Logger];
+}
 
 export const appliedMiddleware = applyMiddleware(...middlewares);

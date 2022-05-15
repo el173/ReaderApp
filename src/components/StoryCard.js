@@ -13,11 +13,13 @@ const StoryCard = ({newsItem, navigation}) => {
       </View>
       <TouchableOpacity
         style={styles.btnViewCommentContainer}
+        disabled={kids && kids.length <= 0}
         onPress={() => navigation.navigate('detailView', {kids})}>
-        <Text
-          style={
-            styles.btnViewComment
-          }>{`View ${kids.length} Comment(s)`}</Text>
+        <Text style={styles.btnViewComment}>
+          {kids && kids.length > 0
+            ? `View ${kids.length} Comment(s)`
+            : 'No Comments'}
+        </Text>
       </TouchableOpacity>
       <View style={styles.footerCaptionContainer}>
         <View style={styles.footerCaptionCol1}>
@@ -75,4 +77,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default StoryCard;
+export default React.memo(StoryCard);

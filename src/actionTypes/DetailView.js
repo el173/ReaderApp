@@ -1,0 +1,2 @@
+export const GET_ITEM_DETAILS = 'GET_ITEM_DETAILS';
+export const GET_ITEM_DETAILS_OK = 'GET_ITEM_DETAILS_OK';

@@ -1,5 +1,6 @@
 import {combineReducers} from 'redux';
 
-import MainViewReducer from './MainView';
+import mainViewReducer from './MainView';
+import detailsViewReducer from './DetailView';
 
-export default combineReducers({mainViewReducer: MainViewReducer});
+export default combineReducers({mainViewReducer, detailsViewReducer});
