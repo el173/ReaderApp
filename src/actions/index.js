@@ -3,13 +3,14 @@ import {
   getTopStoriesDetailsSaga,
   setTopStoriesRefreshingSaga,
 } from './MainView';
-import {getItemDetailsSaga} from './DetailView';
+import {getItemDetailsSaga, clearItemDetailsSaga} from './DetailView';
 
 const sagas = [
   getTopStoriesSaga,
   getItemDetailsSaga,
   getTopStoriesDetailsSaga,
   setTopStoriesRefreshingSaga,
+  clearItemDetailsSaga,
 ];
 
 export const initSagas = sagaMiddleware =>

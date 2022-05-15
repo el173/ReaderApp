@@ -41,7 +41,7 @@ const TopStoriesTab = ({
   }, [topStoriesInfo]);
 
   useEffect(() => {
-    if (topStoriesObj.length > 0) {
+    if (topStoriesObj && topStoriesObj.length > 0) {
       getStoriesInfo({isRefreshing});
     }
   }, [topStoriesObj]);
@@ -61,12 +61,16 @@ const TopStoriesTab = ({
     getStoriesInfo({fromFetchMore: true});
   };
 
+  const onPress = item => {
+    navigation.navigate('Details', {kids: item.kids});
+  };
+
   const keyExtractor = (item, index) => index;
   const renderItem = ({item, index}) => (
     <StoryCard
       key={`${index}-${item.time}`}
       newsItem={item}
-      navigation={navigation}
+      onPress={() => onPress(item)}
     />
   );
 

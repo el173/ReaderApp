@@ -155,7 +155,7 @@ const getTopStoriesInfo = function* async({payload}) {
 
   yield Promise.all(
     topStories[currentIndex].map(async storyItem => {
-      const itemDetails = await await getItemDetails(storyItem);
+      const itemDetails = await getItemDetails(storyItem);
       topStoriesInfoObj.push(itemDetails);
     }),
   );

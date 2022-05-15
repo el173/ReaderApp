@@ -1,3 +1,4 @@
 import StoryCard from './StoryCard';
+import CommentCard from './CommentCard';
 
-export {StoryCard};
+export {StoryCard, CommentCard};

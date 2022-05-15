@@ -5,8 +5,8 @@ import MainView from '../screens/MainView';
 import DetailView from '../screens/DetailView';
 
 const mainScreens = {
-  home: {screen: MainView, title: 'Home'},
-  detailView: {screen: DetailView, title: 'Detail View'},
+  Home: {screen: MainView, title: 'Home'},
+  Details: {screen: DetailView, title: 'Detail View'},
 };
 
 const Stack = createNativeStackNavigator();
@@ -17,8 +17,9 @@ export function MainStack() {
     if (mainScreens.hasOwnProperty(key)) {
       screens.push(
         <Stack.Screen
-          key={mainScreens[key].title}
+          key={key}
           name={key}
+          title={'asd'}
           component={mainScreens[key].screen}
         />,
       );
