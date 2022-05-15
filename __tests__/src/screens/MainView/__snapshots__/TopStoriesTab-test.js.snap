@@ -1,0 +1,216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main View renders no with data 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <ActivityIndicator
+    color="#178DE7"
+    size="large"
+  />
+</View>
+`;
+
+exports[`Main View renders with data 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "by": "ciprian_craciun",
+          "descendants": 5,
+          "id": 31387312,
+          "kids": Array [
+            31387601,
+          ],
+          "score": 21,
+          "time": 1652619857,
+          "title": "Golang Diaries: Generics",
+          "type": "story",
+          "url": "https://www.tbray.org/ongoing/When/202x/2022/05/14/Golang-Generics",
+        },
+      ]
+    }
+    extraData={
+      Array [
+        Object {
+          "by": "ciprian_craciun",
+          "descendants": 5,
+          "id": 31387312,
+          "kids": Array [
+            31387601,
+          ],
+          "score": 21,
+          "time": 1652619857,
+          "title": "Golang Diaries: Generics",
+          "type": "story",
+          "url": "https://www.tbray.org/ongoing/When/202x/2022/05/14/Golang-Generics",
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    getItemLayout={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onEndReached={[Function]}
+    onEndReachedThreshold={0.2}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onRefresh={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    refreshControl={
+      <RefreshControlMock
+        onRefresh={[Function]}
+        refreshing={false}
+      />
+    }
+    refreshing={false}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    viewabilityConfigCallbackPairs={Array []}
+  >
+    <RCTRefreshControl />
+    <View>
+      <View
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#fff",
+              "borderRadius": 10,
+              "elevation": 3,
+              "flex": 1,
+              "marginBottom": 10,
+              "marginHorizontal": 5,
+              "padding": 15,
+              "shadowColor": "rgba(0, 0, 0, 1.0)",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.54,
+              "shadowRadius": 2,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "marginBottom": 10,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 18,
+                }
+              }
+            >
+              Golang Diaries: Generics
+            </Text>
+          </View>
+          <View
+            accessibilityState={
+              Object {
+                "disabled": false,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "flex": 1,
+                "marginBottom": 15,
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#178DE7",
+                  "fontSize": 14,
+                }
+              }
+            >
+              View 1 Comment(s)
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 0.75,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 12,
+                  }
+                }
+              >
+                Sun, 15 May 2022 13:04:17 GMT
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 0.25,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 12,
+                  }
+                }
+              >
+                By: ciprian_craciun
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

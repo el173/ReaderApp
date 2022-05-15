@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1652629797680" clover="3.2.0">
+  <project timestamp="1652629797681" name="All files">
+    <metrics statements="210" coveredstatements="174" conditionals="65" coveredconditionals="43" methods="61" coveredmethods="45" elements="336" coveredelements="262" complexity="0" loc="210" ncloc="210" packages="13" files="23" classes="23"/>
+    <package name="ReaderApp">
+      <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="App.js" path="/Users/admin/Projects/ppg/ReaderApp/App.js">
+        <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="ReaderApp.src">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Store.js" path="/Users/admin/Projects/ppg/ReaderApp/src/Store.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="ReaderApp.src.actionTypes">
+      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="DetailView.js" path="/Users/admin/Projects/ppg/ReaderApp/src/actionTypes/DetailView.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+      </file>
+      <file name="MainView.js" path="/Users/admin/Projects/ppg/ReaderApp/src/actionTypes/MainView.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/admin/Projects/ppg/ReaderApp/src/actionTypes/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="ReaderApp.src.actions">
+      <metrics statements="53" coveredstatements="47" conditionals="28" coveredconditionals="17" methods="14" coveredmethods="12"/>
+      <file name="Common.js" path="/Users/admin/Projects/ppg/ReaderApp/src/actions/Common.js">
+        <metrics statements="6" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="cond" truecount="3" falsecount="1"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+      </file>
+      <file name="DetailView.js" path="/Users/admin/Projects/ppg/ReaderApp/src/actions/DetailView.js">
+        <metrics statements="10" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+      </file>
+      <file name="MainView.js" path="/Users/admin/Projects/ppg/ReaderApp/src/actions/MainView.js">
+        <metrics statements="34" coveredstatements="30" conditionals="24" coveredconditionals="14" methods="7" coveredmethods="6"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="40" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="41" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="45" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="51" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="52" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="68" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="82" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="91" count="2" type="stmt"/>
+        <line num="94" count="2" type="stmt"/>
+        <line num="95" count="0" type="stmt"/>
+        <line num="102" count="1" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/admin/Projects/ppg/ReaderApp/src/actions/index.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="ReaderApp.src.api">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="/Users/admin/Projects/ppg/ReaderApp/src/api/index.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="ReaderApp.src.components">
+      <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="3" methods="4" coveredmethods="4"/>
+      <file name="CommentCard.js" path="/Users/admin/Projects/ppg/ReaderApp/src/components/CommentCard.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="50" count="5" type="stmt"/>
+      </file>
+      <file name="StoryCard.js" path="/Users/admin/Projects/ppg/ReaderApp/src/components/StoryCard.js">
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="36" count="5" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/admin/Projects/ppg/ReaderApp/src/components/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="ReaderApp.src.config">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="/Users/admin/Projects/ppg/ReaderApp/src/config/index.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="ReaderApp.src.lib">
+      <metrics statements="18" coveredstatements="16" conditionals="6" coveredconditionals="5" methods="4" coveredmethods="4"/>
+      <file name="Utils.js" path="/Users/admin/Projects/ppg/ReaderApp/src/lib/Utils.js">
+        <metrics statements="18" coveredstatements="16" conditionals="6" coveredconditionals="5" methods="4" coveredmethods="4"/>
+        <line num="12" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="18" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="41" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="42" count="3" type="stmt"/>
+        <line num="43" count="6" type="stmt"/>
+        <line num="45" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
+        <line num="51" count="2" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="ReaderApp.src.middlewares">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="/Users/admin/Projects/ppg/ReaderApp/src/middlewares/index.js">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="ReaderApp.src.reducers">
+      <metrics statements="10" coveredstatements="6" conditionals="9" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <file name="DetailView.js" path="/Users/admin/Projects/ppg/ReaderApp/src/reducers/DetailView.js">
+        <metrics statements="4" coveredstatements="3" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="8" count="4" type="cond" truecount="1" falsecount="2"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+      </file>
+      <file name="MainView.js" path="/Users/admin/Projects/ppg/ReaderApp/src/reducers/MainView.js">
+        <metrics statements="6" coveredstatements="3" conditionals="5" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="16" count="4" type="cond" truecount="1" falsecount="3"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/admin/Projects/ppg/ReaderApp/src/reducers/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="ReaderApp.src.routes">
+      <metrics statements="7" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="NavigationStack.js" path="/Users/admin/Projects/ppg/ReaderApp/src/routes/NavigationStack.js">
+        <metrics statements="7" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="ReaderApp.src.screens">
+      <metrics statements="25" coveredstatements="24" conditionals="2" coveredconditionals="2" methods="12" coveredmethods="11"/>
+      <file name="DetailView.js" path="/Users/admin/Projects/ppg/ReaderApp/src/screens/DetailView.js">
+        <metrics statements="25" coveredstatements="24" conditionals="2" coveredconditionals="2" methods="12" coveredmethods="11"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="37" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="75" count="2" type="stmt"/>
+        <line num="88" count="2" type="stmt"/>
+        <line num="89" count="2" type="stmt"/>
+        <line num="96" count="2" type="stmt"/>
+        <line num="98" count="2" type="stmt"/>
+        <line num="104" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="ReaderApp.src.screens.MainView">
+      <metrics statements="53" coveredstatements="36" conditionals="12" coveredconditionals="11" methods="22" coveredmethods="11"/>
+      <file name="TopStoriesTab.js" path="/Users/admin/Projects/ppg/ReaderApp/src/screens/MainView/TopStoriesTab.js">
+        <metrics statements="44" coveredstatements="33" conditionals="12" coveredconditionals="11" methods="19" coveredmethods="11"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="39" count="4" type="stmt"/>
+        <line num="40" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="46" count="4" type="stmt"/>
+        <line num="47" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="52" count="4" type="stmt"/>
+        <line num="53" count="2" type="stmt"/>
+        <line num="56" count="4" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="62" count="4" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="67" count="4" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="71" count="4" type="stmt"/>
+        <line num="72" count="4" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="80" count="4" type="stmt"/>
+        <line num="81" count="4" type="stmt"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="89" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="90" count="3" type="stmt"/>
+        <line num="97" count="1" type="stmt"/>
+        <line num="102" count="0" type="stmt"/>
+        <line num="108" count="0" type="stmt"/>
+        <line num="119" count="2" type="stmt"/>
+        <line num="140" count="2" type="stmt"/>
+        <line num="141" count="2" type="stmt"/>
+        <line num="150" count="2" type="stmt"/>
+        <line num="152" count="2" type="stmt"/>
+        <line num="157" count="1" type="stmt"/>
+        <line num="163" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/admin/Projects/ppg/ReaderApp/src/screens/MainView/index.js">
+        <metrics statements="9" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

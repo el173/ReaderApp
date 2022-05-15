@@ -19,7 +19,6 @@ export const makeApiCall = async (url, method = 'GET', params) => {
       // TODO:: bind params to post data
     }
     const response = await axios(configurationObject);
-    // console.log(response.data);
     return {
       success: true,
       data: response.data,

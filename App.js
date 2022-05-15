@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet, SafeAreaView} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {enableScreens} from 'react-native-screens';
 import {Provider} from 'react-redux';
@@ -24,9 +24,9 @@ const App = () => {
     <Provider store={store}>
       <PersistGate persistor={persistor}>
         <NavigationContainer>
-          <View style={styles.rootView}>
+          <SafeAreaView style={styles.rootView}>
             <MainStack />
-          </View>
+          </SafeAreaView>
         </NavigationContainer>
       </PersistGate>
     </Provider>

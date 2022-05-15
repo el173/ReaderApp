@@ -5,6 +5,7 @@ import {
   Text,
   TouchableOpacity,
   useWindowDimensions,
+  Platform,
 } from 'react-native';
 import RenderHtml from 'react-native-render-html';
 
@@ -47,21 +48,28 @@ const StoryCard = ({newsItem, onPress}) => {
   );
 };
 
+const shadow = Platform.select({
+  android: {
+    elevation: 3,
+  },
+  ios: {
+    shadowRadius: 2,
+    shadowColor: 'rgba(0, 0, 0, 1.0)',
+    shadowOpacity: 0.54,
+    shadowOffset: {width: 0, height: 2},
+  },
+});
+
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: '#fff',
     flex: 1,
     marginHorizontal: 5,
     marginBottom: 10,
     padding: 15,
     elevation: 3,
     borderRadius: 10,
-    shadowRadius: 5,
-    shadowOpacity: 1.0,
-    shadowOffset: {
-      height: 1,
-      width: 1,
-    },
-    shadowColor: '#000000',
+    ...shadow,
   },
   titleContainer: {
     // marginBottom: 10,

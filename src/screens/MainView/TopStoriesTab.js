@@ -19,6 +19,7 @@ import {StoryCard} from '../../components';
 const {width} = Dimensions.get('window');
 
 const TopStoriesTab = ({
+  ss,
   getTopStories,
   navigation,
   topStoriesObj,
@@ -36,7 +37,9 @@ const TopStoriesTab = ({
   }, []);
 
   useEffect(() => {
-    setTopStoriesDetails(topStoriesInfo.data);
+    if (topStoriesInfo && topStoriesInfo.data.length > 0) {
+      setTopStoriesDetails(topStoriesInfo.data);
+    }
     setIsLoadMore(false);
   }, [topStoriesInfo]);
 
@@ -68,7 +71,7 @@ const TopStoriesTab = ({
   const keyExtractor = (item, index) => index;
   const renderItem = ({item, index}) => (
     <StoryCard
-      key={`${index}-${item.time}`}
+      key={`${index}}`}
       newsItem={item}
       onPress={() => onPress(item)}
     />
@@ -139,6 +142,7 @@ const mapStateToProps = state => {
     topStoriesObj: state.mainViewReducer.topStories,
     topStoriesInfo: state.mainViewReducer.topStoriesInfo,
     isTopStoryRefreshing: state.mainViewReducer.isTopStoryRefreshing,
+    ss: state,
   };
 };
 

@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details View renders no with data 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <ActivityIndicator
+    color="#178DE7"
+    size="large"
+  />
+</View>
+`;
+
+exports[`Details View renders with data 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "by": "svnpenn",
+          "id": 31387601,
+          "kids": Array [
+            31387632,
+          ],
+          "parent": 31387312,
+          "text": "&gt; func (c *container&gt;[S]) size() int {<p>This is not valid code.",
+          "time": 1652623124,
+          "type": "comment",
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    getItemLayout={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    viewabilityConfigCallbackPairs={Array []}
+  >
+    <View>
+      <View
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#fff",
+              "borderRadius": 10,
+              "elevation": 3,
+              "flex": 1,
+              "marginBottom": 10,
+              "marginHorizontal": 5,
+              "padding": 15,
+              "shadowColor": "rgba(0, 0, 0, 1.0)",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.54,
+              "shadowRadius": 2,
+            }
+          }
+        >
+          <View
+            style={Object {}}
+          >
+            <View
+              style={
+                Array [
+                  Object {},
+                  undefined,
+                  undefined,
+                ]
+              }
+              testID="html"
+            >
+              <View
+                style={
+                  Array [
+                    Object {},
+                    undefined,
+                    undefined,
+                  ]
+                }
+                testID="body"
+              >
+                <Text
+                  allowFontScaling={true}
+                  selectable={false}
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 14,
+                      },
+                      undefined,
+                      undefined,
+                    ]
+                  }
+                >
+                  &gt; func (c *container&gt;[S]) size() int {
+                </Text>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "marginBottom": 14,
+                        "marginTop": 14,
+                      },
+                      undefined,
+                      undefined,
+                    ]
+                  }
+                  testID="p"
+                >
+                  <Text
+                    allowFontScaling={true}
+                    selectable={false}
+                    style={
+                      Array [
+                        Object {
+                          "fontSize": 14,
+                        },
+                        undefined,
+                        undefined,
+                      ]
+                    }
+                  >
+                    This is not valid code.
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+                "marginTop": 10,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 0.75,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 12,
+                  }
+                }
+              >
+                Sun, 15 May 2022 13:58:44 GMT
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 0.25,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 12,
+                  }
+                }
+              >
+                By: svnpenn
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
